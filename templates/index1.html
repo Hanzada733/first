@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+         <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+</head>
+<body>
+<form action="{% url 'reg' %}" method="post">
+Brand
+{% for brand in brands %}
+
+    <p>
+    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="brand" value="{{ brand.id }}"> {{ brand }}</label></p>
+{% endfor %}
+Sait
+{% for sait in saits    %}
+ <p>
+
+    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="sait" value="{{ sait.id }}"> {{ sait }}</label>
+ </p>
+{% endfor %}
+Marketing
+{% for marketing in marketings %}
+<p>
+
+    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="marketing" value="{{ marketing.id }}"> {{ marketing }}</label>
+</p>
+{% endfor %}
+{% csrf_token %}
+{{ form.as_p }}
+
+    <input type="submit" value="send">
+</form>
+</body>
+</html>

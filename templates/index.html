@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Создание, разработка сайта. Изготовление сайтов по всему Казахстану. Заказать создать сайт с нуля под ключ  в студии разработки веб сайтов EX. Качественное профессиональное создание продающего сайта. Вы останетесь довольны нашей работой.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="создание сайтов, разработка сайта, стоимость сайта, сайт под ключ,заказать сайт в Астане,заказать сайт в Нур-султане, сайт с нуля, заказать сайт, студия разработки веб сайтов EX Development">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Веб студия по созданию, продвижению, разработки сайтов по Казахстану.">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Создание, разработка сайта. Изготовление сайтов по Казахстану. Заказать создать сайт в студии разработки веб сайтов EX Development.">
+    <meta property="og:title" content="Создание, разработка, изготовление сайтов по Казахстану. Заказать сайт с нуля под ключ - Веб студия EX">
+    <title>Веб студия EX Group</title>
+    <link rel="shortcut icon" href="{% static '/img/favicon.png' %}" type="image/png">
+    
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    </noscript>
+
+    <script>
+			var loadDeferredStyles = function() {
+				var addStylesNode = document.getElementById("deferred-styles");
+				var replacement = document.createElement("div");
+				replacement.innerHTML = addStylesNode.textContent;
+				document.body.appendChild(replacement)
+				addStylesNode.parentElement.removeChild(addStylesNode);
+			};
+			var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+					window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+			if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+			else window.addEventListener('load', loadDeferredStyles);
+        </script>
+ <style>
+        .preloader-wrap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: RGB(30,30,30);
+            z-index: 1300;
+            animation: preloader 1s linear;
+            animation-fill-mode: forwards;
+        }
+        .preloader-circle {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(circle,rgba(255, 255, 255,0.1), RGB(30,30,30), RGB(30,30,30));
+        }
+        .pre-png{
+            position: absolute;
+            top: 22%;
+            left: 35%;
+            display: block;
+            width: 30%;
+            
+        }
+        .preloader-wrap svg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .preloader-wrap .fil09 {
+            animation: preloader-circle 0.8s linear;
+        }
+        @keyframes preloader {
+			0% { opacity: 1; }
+			60% { opacity: 1;}
+			100% { opacity: 0; visibility: hidden; }
+			}
+		@keyframes preloader-circle {
+			0% { fill: RGB(30,30,30); }
+			100% { fill: RGB(235,211,0); }
+		}
+    </style>
+
+</head>
+<body>
+    <div class="preloader-wrap">
+        <div class="preloader-circle"></div>
+        <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30%" height="30%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 36 54"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+    .fil09 {fill:#2B2A29;fill-rule:nonzero}
+  </style>
+ </defs>
+<img src="{% static 'img/preloader.png' %}" class="pre-png">
+</svg>
+    </div>
+
+        <div class="small_menu">
+                <div class="small_menu_logo">
+                       <img src="{% static 'img/small.png' %}" width="200%">
+                </div>
+                <div class="small_menu_btn__wrapper">
+                    <div class="small_menu_btn__line"></div>
+                    <div class="small_menu_btn__line"></div>
+                    <div class="small_menu_btn__line"></div>
+            </div>
+        </div>
+    <header class="nav_container">
+        <span class="nav_container__word"></span>
+        <div class="logo">
+                
+        </div>
+    
+        <nav class="nav_menu__container">
+            <ul  class="nav_menu">
+                <li class="nav_menu__item"><a href="#services">Создание сайтов </a><span>01</span></li>
+                <li class="nav_menu__item"><a href="#our-style">брендинг </a><span>02</span></li>
+                <li class="nav_menu__item"><a href="#marketing">интернет-маркетинг </a><span>03</span></li>
+                <li class="nav_menu__item"><a href="#project">проекты</a> <span>04</span></li>
+                <li class="nav_menu__item"><a href="#aboutUs">кто мы такие</a> <span>05</span></li>
+                <li class="nav_menu__item"><a href="#contact">контакты</a> <span>06</span></li>
+            </ul>
+            <ul  class="nav_menu">
+                <li class="nav_menu__item"><a href="#services_id">Создание сайтов </a><span>01</span></li>
+                <li class="nav_menu__item"><a href="#our-style_id">брендинг </a><span>02</span></li>
+                <li class="nav_menu__item"><a href="#marketing_id">интернет-маркетинг </a><span>03</span></li>
+                <li class="nav_menu__item"><a href="#project_id">проекты</a> <span>04</span></li>
+                <li class="nav_menu__item"><a href="#aboutUs_id">кто мы такие</a> <span>05</span></li>
+                <li class="nav_menu__item"><a href="#contact_id">контакты</a> <span>06</span></li>
+            </ul>
+        </nav>
+        <div class="nav-btn__exid">
+            <span class="modal_close_wrap">
+                <span class="modal_close_leftLine"></span>
+                <span class="modal_close_rightLine"></span>
+            </span>
+        </div>
+        
+    </header>
+
+    <div class="left_bord">
+        <div class="logo">
+        </div>
+        <div class="menu_btn">
+            <div class="menu_btn__container">
+                <img src="{% static 'img/menu.png' %}" width="30px" height="30px;">
+            
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="right_bord">
+      
+        <div class="numberPage_wrapCont">
+            <div class="numberPage_wrap">
+                <div class="numberPage_dotWrap">
+                    <div class="numberPage_item">
+                        <span class="numberPage_item__count">01</span>
+                        <span class="numberPage_item__line"></span>
+                        <span class="numberPage_item__dot"></span>
+                    </div>
+                    <div class="numberPage_item">
+                        <span class="numberPage_item__count">02</span>
+                        <span class="numberPage_item__line"></span>
+                        <span class="numberPage_item__dot"></span>
+                    </div>
+                    <div class="numberPage_item">
+                        <span class="numberPage_item__count">03</span>
+                        <span class="numberPage_item__line"></span>
+                        <span class="numberPage_item__dot"></span>
+                    </div>
+                    <div class="numberPage_item">
+                        <span class="numberPage_item__count">04</span>
+                        <span class="numberPage_item__line"></span>
+                        <span class="numberPage_item__dot"></span>
+                    </div>
+                    <div class="numberPage_item">
+                        <span class="numberPage_item__count">05</span>
+                        <span class="numberPage_item__line"></span>
+                        <span class="numberPage_item__dot"></span>
+                    </div>
+                    <div class="numberPage_item">
+                        <span class="numberPage_item__count">06</span>
+                        <span class="numberPage_item__line"></span>
+                        <span class="numberPage_item__dot"></span>
+                    </div>
+                    <div class="numberPage_item">
+                        <span class="numberPage_item__count">07</span>
+                        <span class="numberPage_item__line"></span>
+                        <span class="numberPage_item__dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="call_back">
+            <a href="#callUs_modal" id="stat_call_back_btn" class="call_back__callBtn open_modal">ЗАКАЗАТЬ ПРОЕКТ</a>
+        </div>
+    </div>
+
+    <section class="home_slider section" id="home_id" data-section-name="home">
+        <div class="wrapper">
+                <div class="home_slider__bg"></div>
+                <div class="wrap_line__cont">
+                        <div class="wrap_line__item anim_slideStart"></div>
+                        <div class="wrap_line__item "></div>
+                        <div class="wrap_line__item anim_slide"></div>
+                        <div class="wrap_line__item "></div>
+                        <div class="wrap_line__item anim_slideStart"></div>
+                    </div>
+                    <h3 class="home_slider__bgTextEvox">ex group</h3>
+                    <h3 class="home_slider__bgText">Разработка</h3>
+                    <h3 class="home_slider__bgTextSub">сайтов</h3>
+                    <div class="home_slider__bgTextSubpre">
+                            <h4 style="font-size: 30px;">по всему Казахстану</h4>
+                            
+                    </div>
+        <div class="home_slider__bgImage"></div>
+        
+        </div>
+    </section>
+
+    <section class="wow services section" id="services_id" data-wow-duration="1s" data-wow-delay="0.2s" data-section-name="services">
+            <div class="services_bg__text"></div>
+
+            <div class="services_bg__wrap">
+                <div class="services_bg__img"></div>
+                <a href="#callUs_modal" id="stat_bg_img_1_btn" class="services_btn open_modal max_modal">покорить вершины</a>
+                <span class="services_close">
+                    <span class="modal_close_wrap">
+                        <span class="modal_close_leftLine"></span>
+                        <span class="modal_close_rightLine"></span>
+                    </span>
+                </span>
+            </div>
+
+            <div class="wrapper wow" data-wow-delay="0.5s">
+                <div class="services_title">
+                    <h2 class="services_title_sup">Создание <span>сайтов</span></h2>
+                    <h2>Создание <span>сайтов</span></h2>
+                </div>
+                <div class="services_title__sub">
+                    <h3>Создаем сайты с WOW эффектом,
+                        продающие интернет-магазины
+                        приносящие реальную прибыль!
+                    </h3>
+                </div>
+                <div class="services_list__wrap">
+                    <ul class="services_list">
+                        <li class="services_list_line"><span>01</span>интернет магазин</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Основная задача</span> обеспечить удобный инструмент для выбора и заказа товаров или услуг. Целевым действием пользователя считается оформление заказа и его оплата с сайта.</br><span class="services_Text_span"> от 150.000 тг</span></li>
+                        <li class="services_list_line"><span>02</span>landing page</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Landing page</span> дает возможность за несколько секунд, рассказать самое главное о вашей компании, услуге или товаре. Задача посадочной страницы - продажа или захват контактных данных клиента.</br><span class="services_Text_span">от 80.000тг</span></li>
+                        <li class="services_list_line"><span>03</span>сайт визитка</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Небольшой сайт</span>, состоящий из одной (или нескольких) веб-страниц и содержащий основную информацию об организации, частном лице, компании, товарах или услугах, контактные данные.</br><span class="services_Text_span">от 120.000тг</span></li>
+                    </ul>
+                    <ul class="services_list">
+                        <li class="services_list_line"><span>04</span>дизайн</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Разработка пользовательских</span> интерфейсов при грамотном подходе строится таким образом, чтобы создать его максимально привлекательным и удобным для оптимизации его взаимодействия с пользователем.</br><span class="services_Text_span">От 80.000тг</span></li>
+                        <li class="services_list_line"><span>05</span>сайт компании</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Официальное виртуальное</span> представительство компании в интернете. Корпоративный сайт содержит полный объем информации о самой компании, о сфере ее деятельности, предлагаемой продукции и услугах.</br><span class="services_Text_span">От 250.000тг</span></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="services_btn_wrapSmall">
+                        <a href="#callUs_modal" id="stat_dev_site_btn" class="services_btn open_modal">заказать проект</a>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="wow services section" id="our-style_id" data-wow-duration="1s" data-wow-delay="0.2s" data-section-name="our-style">
+            <div class="services_bg__wrap">
+                    <div class="services_bg__img"></div>
+                    <a href="#callUs_modal" id="stat_bg_img_2_btn" class="services_btn open_modal max_modal">покорить вершины</a>
+                    <span class="services_close">
+                        <span class="modal_close_wrap">
+                            <span class="modal_close_leftLine"></span>
+                            <span class="modal_close_rightLine"></span>
+                        </span>
+                    </span>
+                </div>
+
+            <div class="services_bg__text"></div>
+
+            <div class="wrapper wow" data-wow-delay="0.5s">
+                <div class="services_title">
+                    <h2 class="services_title_sup">создание <span>бренда</span></h2>
+                    <h2>создание <span>бренда</span></h2>
+                </div>
+                <div class="services_title__sub">
+                    <h3>Полный спектр услуг по созданию бренда.
+                        Нейминг, разработка логотипа,
+                        фирменный стиль, слоган, графический
+                        дизайн и полиграфия
+                    </h3>
+                </div>
+                <div class="services_list__wrap">
+                    <ul class="services_list">
+                        <li class="services_list_line"><span>01</span>нейминг компании</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Нейминг</span> - это создание оригинального названия для компании, торговой марки, бренда, фирмы. Услуги нейминга нужны каждой организации не зависимо от сферы деятельности.</li>
+                        <li class="services_list_line"><span>02</span>разработка логотипа</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Графическое изображение</span> компании или торговой марки, которое представляет собой рисунок или знак, надпись названия фирмы и в дальнейшем используется для создания фирменного стиля.</li>
+                        <li class="services_list_line"><span>03</span>фирменный стиль</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Фирменный стиль</span> — это система графических форм и констант, подчиненных единой идеологии, концепции и стилистике, которые закладывают основу всех визуальных коммуникаций вашего бренда.</li>
+                    </ul>
+                    <ul class="services_list">
+                        <li class="services_list_line"><span>04</span>дизайн полиграфии</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Имиджевая полиграфия</span> бренда является носителем ключевых ценностей бренда и стратегическим инструментом его коммуникации с конечным потребителем и деловыми партнерами.</li>
+                        <li class="services_list_line"><span>05</span>брэндбук</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Брендбук</span> — официальный документ компании, в котором описывается концепция бренда, атрибуты бренда, целевая аудитория, позиционирование компании и другие данные.</li>
+                        <li class="services_list_line"><span>06</span>дизайн рекламы</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Дизайн рекламы</span> объединяет такие сегменты и направления, как дизайн печатной, интернет-рекламы, а также дизайн наружной рекламы, нестандартных рекламных носителей и конструкций.</li>
+                    </ul>
+                </div>
+               
+                <div class="services_btn_wrapSmall">
+                        <a href="#callUs_modal" id="stat_our_style_btn" class="services_btn open_modal">заказать проект</a>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="wow services section" id="marketing_id" data-wow-duration="1s" data-wow-delay="0.2s" data-section-name="marketing">
+
+           
+
+
+            <div class="services_bg__text"></div>
+            <div class="wrapper wow" data-wow-delay="0.5s">
+                <div class="services_title">
+                    <h2 class="services_title_sup">интернет <span>маркетинг</span></h2>
+                    <h2>интернет <span>маркетинг</span></h2>
+                </div>
+                <div class="services_title__sub">
+                    <h3>Результативное продвижение вашего сайта впоисковых системах. Контекстная реклама (PPC) - объявления вашей компании в результатах поиска. Продвижение в социальных сетях (SMM).
+                    </h3>
+                </div>
+                <div class="services_list__wrap services_list__wrap_market">
+                    <ul class="services_list">
+                        <li class="services_list_line"><span>01</span>Продвижение сайтов</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Продвижение сайта</span> — комплекс мер по обеспечению посещаемости сайта целевыми посетителями путем повышения позиций сайта в поисковой выдаче.</li>
+                        <li class="services_list_line"><span>02</span>Контекстная реклама</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Контекстная реклама</span> — тип интернет-рекламы, при котором рекламное объявление показывается в соответствии с содержанием, контекстом интернет-страницы</li>
+                        <!--<li class="services_list_line"><span>03</span>Продвижение в соц.сетях</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Маркетинг</span> в социальных сетях SMM — процесс привлечения внимания через социальные сети. Это комплекс мероприятий по использованию социальных медиа для продвижения компаний и решения других бизнес-задач</li>-->
+                    </ul>
+                    <ul class="services_list">
+                        <li class="services_list_line"><span>03</span>Таргетинговая реклама</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Таргетинговая реклама</span> - это вид рекламы, позволяющий показывать её определённой группе целевых покупателей, исходя из их возраста, географического положения, увлечений и других индикаторов.</li>
+                        <li class="services_list_line"><span>04</span>Копирайтинг</li>
+                        <li class="services_listText__wrap"><span class="services_Text_span">Копирайтинг</span> — деятельность по написанию рекламных и презентационных текстов. Таковыми можно считать все тексты, которые прямым или косвенным образом рекламируют или популяризируют товар, компанию, услугу, человека или идею.</li>
+                    </ul>
+                </div>
+                
+                <div class="services_btn_wrapSmall">
+                    <a href="#callUs_modal" id="stat_marketing_btn" class="services_btn open_modal">заказать проект</a>
+                </div>
+            </div>
+
+    </section>
+
+
+    <div class="small_one">
+            <h2 class="services_title_sup">Наши <span>проекты</span></h2>
+            <h2>Наши <span>проекты</span></h2>
+        </div>
+    <section class="project section" id="project_id" data-section-name="project">
+        <div class="wrapper">
+            <h2 class="project_titleh2">Наши работы</h2>
+            <div class="project_wrap">	
+                <div class="project_item project_item_btn">
+                    <a href="#" class="project_item_btn_link">Проекты</a>
+                    <!-- <span class="project_title">VIZIR</span>
+                    <p class="project_text">Разработка корпоративного сайта компании ООО ТПК «ВИЗИР» ...</p> -->
+
+                </div>
+                <div class="project_itemWrap_bg wow" id="project_item_oneBg" data-wow-delay="0.3s">
+                   <span class="project_item_bgTitle wow" data-wow-delay="0.5s">JASIA - asian kitchen</span>
+                   <div class="project_item_bgCount wow" data-wow-delay="0.7s">1</div>
+                   <div class="project_item_bgText wow" data-wow-delay="0.9s">
+                       <p>Разработака сайта по доставке еды японской, китайской и индийской кухни.</p>
+                       <p>Джасия – азиатский ресторан в яффском стиле, располагается внутри старинного здания прямо рядом с греческой церковью в старом Яффо. Без сомнения, место пропитано историей и духом старого времени, а особенный дизайн, в котором сочетаются камень и дерево, создает потрясающе сказочную атмосферу с азиатскими элементами.</p>
+                   </div>
+                   <div class="project_item_bgLkBtn" data-wow-delay="1.1s">
+                       <a rel="nofollow" href="http://jasia.evoxlab.com//" target="_blank" class="project_item_bgLk">перейти</a>
+                   </div>
+                   <div class="project_item_bgBtnExid" data-wow-delay="1.3s">
+                       <span class="modal_close_wrap">
+                           <span class="modal_close_leftLine"></span>
+                           <span class="modal_close_rightLine"></span>
+                       </span>
+                </div>
+                </div>
+                <div class="project_itemWrap_bg wow" id="project_item_tooBg" data-wow-delay="0.3s">
+                   <span class="project_item_bgTitle wow" data-wow-delay="0.5s">KABO GROUP - FIRE SAFETY AGENCY</span>
+                   <div class="project_item_bgCount wow" data-wow-delay="0.7s">2</div>
+                   <div class="project_item_bgText wow" data-wow-delay="0.9s">
+                        <p>Разработка корпоративного сайта агенства пожарной безопасности КАБО ГРУПП.
+						<p>Компания КАБО ГРУППП проводит комплекс мероприятий, обеспечивающих полную пожарную безопасность на объекте.</p>
+						<p>Разработана индивидуальная концепция дизайна и структура сайта, что позволило сайту занять лидирующие позиции в своей нише. Премиум дизайн сайта говорит о надежности и высоком уровне компании.</p>
+                   </div>
+                   <div class="project_item_bgLkBtn" data-wow-delay="1.1s">
+                       <a rel="nofollow" href="https://kabogroup.com.ua/" target="_blank" class="project_item_bgLk">перейти</a>
+                   </div>
+                   <div class="project_item_bgBtnExid" data-wow-delay="1.3s">
+                       <span class="modal_close_wrap">
+                           <span class="modal_close_leftLine"></span>
+                           <span class="modal_close_rightLine"></span>
+                       </span>
+                   </div>
+                </div>
+
+-->
+
+                <div class="project_itemWrap_bg wow" id="project_item_threeBg" data-wow-delay="0.3s">
+                   <span class="project_item_bgTitle wow" data-wow-delay="0.5s">GOSTY - music & kitchen</span>
+                   <div class="project_item_bgCount wow" data-wow-delay="0.7s">3</div>
+                   <div class="project_item_bgText wow" data-wow-delay="0.9s">
+                        <p>Разработка имеджевого сайта банкет-холла в Ришон ле-Ционе.</p>
+						<p>Динамичный и яркий дизайн, говорит о премиальном уровне заведения.</p>
+
+						<p>Имиджевое видео на главном экране сайта дает возможность в полной мере окунуться в атмосферу заведения. Горизонтальное расположение страниц без вертикальной прокрутки выделяет сайт среди конкурентов. Реализована возможность бронирования мероприятий онлайн.</p>
+                   </div>
+                   <div class="project_item_bgLkBtn" data-wow-delay="1.1s">
+                       <a rel="nofollow" href="https://gosty.co.il/" target="_blank" class="project_item_bgLk">перейти</a>
+                   </div>
+                   <div class="project_item_bgBtnExid" data-wow-delay="1.3s">
+                       <span class="modal_close_wrap">
+                           <span class="modal_close_leftLine"></span>
+                           <span class="modal_close_rightLine"></span>
+                       </span>
+                   </div>
+                </div>
+
+
+                <div class="project_itemWrap_bg wow" id="project_item_foorBg" data-wow-delay="0.3s">
+                   <span class="project_item_bgTitle wow" data-wow-delay="0.5s">aura shoes</span>
+                   <div class="project_item_bgCount wow" data-wow-delay="0.7s">4</div>
+                   <div class="project_item_bgText wow" data-wow-delay="0.9s">
+                       <p>Разработка интернет-магазина женской обуви украинского производителя AURA.</p>
+                       <p>Дизайн сайта выполнен в минималистичном стиле, что дает возможность максимально сконцентирировать внимаение покупателя на продукте предлагаемом на сайте. Так же нами была разработана схема расположения товаров для получения правильных луков для сайта. Это позволило максимально раскрыть красоту можедей обуви.</p>
+                   </div>
+                   <div class="project_item_bgLkBtn" data-wow-delay="1.1s">
+                       <a rel="nofollow" href="https://detskieroliki.com.ua/" class="project_item_bgLk" target="_blank" >перейти</a>
+                   </div>
+                   <div class="project_item_bgBtnExid" data-wow-delay="1.3s">
+                       <span class="modal_close_wrap">
+                           <span class="modal_close_leftLine"></span>
+                           <span class="modal_close_rightLine"></span>
+                       </span>
+                   </div>
+                </div>
+
+
+                <!-- <div class="project_itemWrap_bg wow" id="project_item_fiveBg" data-wow-delay="0.3s">
+                   <span class="project_item_bgTitle wow" data-wow-delay="0.5s">VIZIR</span>
+                   <div class="project_item_bgCount wow" data-wow-delay="0.7s">5</div>
+                   <div class="project_item_bgText wow" data-wow-delay="0.9s">
+                       <p>Разработка корпоративного сайта компании ООО ТПК «ВИЗИР».</p>
+                       <p> Сайт разработан на платформе WordPress. Был создан уникальный дизайн с использованием корпоративных цветов компании.</p>
+                   </div>
+                   <div class="project_item_bgLkBtn" data-wow-delay="1.1s">
+                       <a rel="nofollow" href="http://dian.evoxlab.com/" target="_blank" class="project_item_bgLk">перейти</a>
+                   </div>
+                   <div class="project_item_bgBtnExid" data-wow-delay="1.3s">
+                       <span class="modal_close_wrap">
+                           <span class="modal_close_leftLine"></span>
+                           <span class="modal_close_rightLine"></span>
+                       </span>
+                   </div>
+                </div> -->
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section wow about_us" id="aboutUs_id" data-wow-duration="1s" data-wow-delay="0.2s" data-section-name="aboutUs">
+
+            <div class="services_bg__wrap">
+                    <div class="services_bg__img"></div>
+                    <a href="#callUs_modal" id="stat_bg_img_4_btn" class="services_btn open_modal max_modal">покорить вершины</a>
+                    <span class="services_close">
+                        <span class="modal_close_wrap">
+                            <span class="modal_close_leftLine"></span>
+                            <span class="modal_close_rightLine"></span>
+                        </span>
+                    </span>
+                </div>
+
+
+
+        <div class="about_us_bg__text"></div>
+
+        <div class="wrapper">
+            <div class="services_title">
+                <h2 class="services_title_sup">немного <span>о нас</span></h2>
+                <h2>немного <span>о нас</span></h2>
+            </div>
+            <div class="services_title__sub">
+                <h4>
+Мы веб-студия из Нур-Султана.
+Миссия – сопровождать вас на пути к покорению вершин бизнеса.</h4>
+            </div>
+            <div class="about_us__seoWrap">
+                <h1 class="about_us__seoWrap_title">создание и продвижение сайтов</h1>
+                <div class="about_us__seoWrap_text">
+                    <p>Компания «EX Development Group» предлагает создание и продвижение сайтов. Мы используем современные инструменты, с помощью которых создаются эффективные сайты, занимающие первые места в поисковых системах.</p>
+                    <p>Сейчас невозможно представить современный бизнес без качественного создания и продвижения сайта. Это один из основных этапов, обеспечивающий эффективную деятельность любого предприятия. Интернет-страница гарантирует не только увеличение прибыли, но и расширение клиентской базы. Данной работой занимаются опытные и квалифицированные специалисты, поскольку сам процесс создания и продвижения ресурса является сложным, трудоемким. Наша веб-студия использует особенный комплексный подход при выполнении каждого заказа, который ориентируется на высокий уровень конверсии.</p>
+                    <h3>ЭТАПЫ СОЗДАНИЯ САЙТА</h3>
+                    <ul>
+                        <li>
+                            <h4>ВЫЯВЛЕНИЕ ГЛАВНЫХ ЦЕЛЕЙ РЕСУРСА И ЕГО ПОЗИЦИОНИРОВАНИЕ</h4>
+                            <p>Создание сайта начинается с определения основных заданий, которые в будущем будет выполнять ресурс. Обязательно представляется компания, традиционными методами осуществляется маркетинговая и рекламная кампания. Основные цели определяются заказчиком, которые в дальнейшем могут усовершенствоваться непосредственно исполнителем. Также выявляется целевая аудитория, а также подбираются ключевые запросы (слова и фразы) для продвижения, за счет которых сайт будет показываться в результатах поисковых систем.</p>
+                        </li>
+                        <li>
+                            <h4>СОСТАВЛЕНИЕ ТЕХНИЧЕСКОГО ЗАДАНИЯ НА РАЗРАБОТКУ РЕСУРСА</h4>
+                            <p>задачи интернет-страницы и ее целевая группа пользователей;структура ресурса и состав его разделов;функционирование динамических модулей. Создание и продвижение невозможно без указания в ТЗ дизайнерских пожеланий (все, что касается внешнего оформления), применяемых технологий (например, HTML, Flash), последовательности разработки всей необходимой информации – графики и текстов. Большое внимание уделяется к техническим требованиям сайта. Проектное задание – самая главная документация, на основе которой осуществляется дальнейшее создание и продвижение страницы.</p>
+                        </li>
+                        <li>
+                            <h4>РАЗРАБОТКА ГРАФИЧЕСКОГО МАКЕТА РЕСУРСА</h4>
+                            <p>На данном этапе с помощью специальной программы составляется дизайнерское оформление сайта с прорисовкой всех необходимых деталей. Составляется предварительный вид баннеров, фотографий, кнопок перехода по страницам. Работа с дизайном является довольно сложной. Поскольку он должен быть ярким, привлекательным, полезным для посетителей, но и в то же время ненавязчивым. Графика также имеет влияние на дальнейшее продвижение ресурса в поисковых системах. Здесь непременно учитываются пожелания заказчика со следованием утвержденного ТЗ.</p>
+                        </li>
+                        <li>
+                            <h4>ВЕРСТКА</h4>
+                            <p>После утверждения графического макета с заказчиком, создание сайта продолжается с верстки. Это процесс, когда специалист превращает дизайн (который до этого момента находился в виде изображения) в HTML-код.</p>
+                        </li>
+                        <li>
+                            <h4>ПРОГРАММИРОВАНИЕ ВЕБ-РЕСУРСА</h4>
+                            <p>Интернет-студия занимается созданием всех важных страниц. От их качества зависит будущее продвижение. На этапе программирования проводятся такие процедуры: определяется, в каком порядке будет функционировать основное меню; располагаются гиперссылки; составляется лента новостей и другие составляющие. В зависимости от того, насколько сложный проект, работы по программированию могут проводиться от нескольких недель до пары месяцев.</p>
+                        </li>
+                        <li>
+                            <h4>ЗАПОЛНЕНИЕ РЕСУРСА ИНФОРМАЦИОННЫМ СОДЕРЖАНИЕМ</h4>
+                            <p>Вся информация, которая должна размещаться на сайте, предоставляется самим заказчиком. Она переводится мастерами в особенный формат, располагается на определенных страницах и становится публично доступной. Для того чтобы создание страницы прошло быстрее, рекомендуется подавать исполнителю информацию в электронном виде.</p>
+                        </li>
+                    </ul>
+                    <h3>ОСОБЕННОСТИ ПРОДВИЖЕНИЯ</h3>
+                    <p>Помимо того, что компания осуществляет качественное создание сайтов, она предоставляет услуги по комплексному продвижению. Для этого используются только проверенные, эффективные инструменты, с помощью которых обеспечиваются высокие результаты. Мы применяем современные инструменты, направленные на продвижение сайтов.</p>
+                    <ul>
+                        <li>
+                            <h4>МАРКЕТИНГ В СОЦСЕТЯХ (SMM)</h4>
+                            <p>Его основная цель – привлечение на страницу целевых потребителей. Он разделяется на две категории. Первая направлена на раскрутку в поисковых системах. То есть ресурс должен соответствовать целевым запросам и оформлению. Она бывает внешняя и внутренняя. Вторая категория продвижения – это расположение материалов на других ресурсах. При этом проводится создание и размещение статьи информационного характера с линком (может быть платным и бесплатным). Как правило, для результативного продвижения, публикация осуществляется на крупных площадках, тематика которых соответствует вашему сайту</p>
+                        </li>
+                        <li>
+                            <h4>ПОИСКОВАЯ ОПТИМИЗАЦИЯ (SEO)</h4>
+                            <p>Считаются самыми модными и популярными. Ссылка на вашу интернет-страницу размещается в определенных сообществах. Для продвижения может проводиться создание отдельной группы, занимающейся продажей продукции или услуги. Также здесь используется способ раскрутки сайта с помощью блогов.</p>
+                        </li>
+                        <li>
+                            <h4>КОНТЕКСТНАЯ РЕКЛАМА (PPC)</h4>
+                            <p>Продвижение заключается в создании и размещении рекламных объявлений в Google и Яндекс. Данный метод является самым простым и результативным. В течение нескольких часов вы уже заметите увеличение количества целевых посетителей. Создание контекстной рекламы для продвижения не имеет трудностей. Для высокой результативности достаточно придумать привлекательный заголовок и текст, указать несколько ключевых фраз, выбрать аудиторию и тему площадки. Специалисты правильно настроят кампанию, главные цели, время демонстрации рекламы и другие важные составляющие.</p>
+                        </li>
+                    </ul>
+                    <p>Чтобы раскрутка сайтов была эффективной и давала результат, рекомендуется постоянно обновлять информационное содержание ресурса, добавляя интересные, уникальные публикации и новости. Немаловажным является сотрудничество с посторонними веб-страницами, которые пользуются авторитетом и популярностью среди пользователей. С помощью других сайтов вы имеете возможность размещать у них ссылки на ваш ресурс (это может быть увлекательная статья с линком). Также в качестве раскрутки используют платформы с полезными отзывами. Здесь можно располагать положительные комментарии со ссылкой, ведущей на вашу страницу.</p>
+                    <p>Разрабатывание семантического ядра – это один из этапов создания и продвижения сайта. Ему профессионалы уделяют особое внимание. Ключевые запросы выбираются особенно тщательно. Для этого применяют специальные программы (например, Wordstat). Ключевики могут быть двух видов: коммерческие – их основная цель получение хорошей прибыли; информационного характера – необходимы для разьяснения посетителям, для чего необходима продукция или услуга. Они располагаются на разных страницах ресурса.</p>
+                    <h3>ГАРАНТИЯ ВЫСОКОГО КАЧЕСТВА И ЭФФЕКТИВНОСТИ</h3>
+                    <p>Агенство «EX Development Group» предоставляет услуги разработки сайтов и их продвижения по самой доступной, приемлемой стоимости. Компания предлагает выгодные условия сотрудничества для малого и среднего бизнеса, которые нуждаются в продажах с помощью Всемирной сети интернет. Команда из высококвалифицированных специалистов выполняет даже самые сложные проекты. При этом каждый заказчик получит веб-страницу, которая будет постоянно расширять целевую аудиторию и приносить хорошую прибыль.</p>
+                    <p>Желаете надежную, продуктивную и результативную страницу, которая будет приносить доход от ведения вашей деятельности? Обращайтесь в компанию «EX Development Group», основное направление которой — создание и продвижение сайтов в Интернете! Фирма гарантирует не только надежную и быструю реализацию проекта, но и постоянное увеличение целевой аудитории за счет первых позиций вашего веб-ресурса в поисковых системах!</p>
+                </div>
+            </div>
+            
+            <div class="services_btn_wrapSmall">
+                    <a href="#callUs_modal" id="stat_aboutUs_btn" class="services_btn open_modal">заказать проект</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section wow contact_us" id="contact_id" data-wow-duration="1s" data-wow-delay="0.2s" data-section-name="contact">
+
+            <div class="services_bg__wrap">
+                    <div class="services_bg__img"></div>
+                    <a href="#callUs_modal" id="stat_bg_img_5_btn" class="services_btn open_modal max_modal">покорить вершины</a>
+                    <span class="services_close">
+                        <span class="modal_close_wrap">
+                            <span class="modal_close_leftLine"></span>
+                            <span class="modal_close_rightLine"></span>
+                        </span>
+                    </span>
+                </div>
+
+
+
+    <div class="wrapper">
+        <div class="contact_us__bgText__grey">Контакты</div>
+        <div class="contact_us__bgText">Контакты</div>
+
+        <div class="contact_us__bgImg"></div>
+        <div class="contact_us_bgTreangle"></div>
+
+        <div class="contact_us__formWrap">
+
+            <form  class="form" method="post" action="{% url 'message_form' %}" >
+   {% csrf_token %}
+
+              <div class="form-group">
+                  <label class="form-label" for="contact_us_name">Ваше Имя</label>
+                  <input type="text" class="form-control" id="contact_us_name" name="name" placeholder="Ваше Имя (Обязательно)" tabindex="1" maxlength="18" required>
+              </div>
+              <div class="form-group">
+                  <label class="form-label" for="contact_us_email">Ваш Email</label>
+                  <input type="email" class="form-control" id="contact_us_email" name="email" placeholder="Ваш Email (Обязательно)" tabindex="2" pattern="^\S+@\S+\.\S+$" required>
+              </div>
+              <div class="form-group">
+                  <label class="form-label" for="contact_us_subject">Тема Сообщения</label>
+                  <input type="text" class="form-control" id="contact_us_subject" name="subject" placeholder="Тема Сообщения" tabindex="3">
+              </div>
+              <div class="form-group">
+                  <label class="form-label" for="contact_us_message">Сообщение</label>
+                  <textarea name="message" class="form-control" id="contact_us_message" placeholder="Сообщение..." tabindex="4"></textarea>
+              </div>
+
+              <div class="text-center">
+                  <button type="submit" class="services_btn">Отправить письмо</button>
+
+              </div>
+          </form>
+        </div>
+
+        <ul class="contact_us__leftWrap">
+            <li class="contact_us__leftWrap_title">
+                <h3>покоряйте вершины</h3>
+                <h4>бизнеса вместе с нами</h4>
+            </li>
+            <li class="contact_us__leftWrap_text">
+                <p>До вашего успеха осталось сделать лишь несколько шагов. Заполните наш бриф, утвердите техническое задание и отправляйтесь в путь к вашей вершине. А мы поможем вам в этом! С уважением, команда EVOXLAB.</p>
+            </li>
+            <li class="contact_us__leftWrap_link">
+                <a target="_blank" id="stat_download_brif_btn" href="{% url 'brief' %}" class="services_btn">заполнить бриф</a>
+            </li>
+            <li class="contact_us__leftWrap_mail">
+                <ul class="contact_us__SubleftWrap">
+                    <li>
+                        <h6>телефон</h6>
+                        <a href="tel:+77471952014">+ 7 (747) 195 20 14</a>
+                    </li>
+                    <li>
+                        <h6>пишите</h6>
+                        <a href="mailto:evoxlab.com@gmail.com">ex.devgroup@gmail.com</a>
+                    </li>
+                    <li>
+                        <h6>адрес</h6>
+                        <p>г.Нур-Султан</p>
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+        
+    </div>
+
+    </section>
+
+  <div class="modal_div " id="callUs_modal">
+
+        <span id="modal_close">
+                <span class="modal_close_wrap">
+                    <span class="modal_close_leftLine"></span>
+                    <span class="modal_close_rightLine"></span>
+            </span>
+            </span>
+
+            <span id="modal_close_bg">
+                    <span class="modal_close_wrap">
+                        <span class="modal_close_leftLine"></span>
+                        <span class="modal_close_rightLine"></span>
+            </span>
+            </span><!-- Кнoпкa зaкрыть -->
+
+            <h3 class="modal_form__title">Позвоните нам</h3>
+            <ul class="call_us__formTel">
+                <li><a href="tel:+77471952014">+7 (747) 195 20 14</a></li>
+                <li><a href="tel:+77772387225">+ 7 (777) 238 72 25</a></li>
+            </ul>
+
+    <h3 class="modal_form__title">Или оставте заявку на обратный звонок</h3>
+    <div class="call_us__formWrap">
+        <form class="call_usForm" method="post" action="{% url 'reg' %}">
+            {% csrf_token %}
+            <div class="form_leftSection">
+                    <fieldset class="contact_us__siteDev">
+                            <h6>Создание Сайтов</h6>
+                            <div class="contact_us__siteDev_wrap">
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="site" value="{{ saits.0.id }}"> {{ saits.0 }}</label>
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="site" value="{{ saits.1.id }}"> {{ saits.1 }}</label>
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="site" value="{{ saits.2.id }}"> {{ saits.2 }}</label>
+                            </div>
+                            <div class="contact_us__siteDev_wrap">
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="site" value="{{ saits.3.id }}"> {{ saits.3 }}</label>
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="site" value="{{ saits.4.id }}"> {{ saits.4 }}</label>
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="site" value="{{ saits.5.id }}"> {{ saits.5 }}</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contact_us__siteDev">
+                           <h6>Создание Бренда</h6>
+                           <div class="contact_us__siteDev_wrap">
+                                <label class="label--checkbox"><input type="checkbox" class="checkbox" name="brand" value="{{ brands.0.id }}"> {{ brands.0 }}</label>
+                                <label class="label--checkbox"><input type="checkbox" class="checkbox" name="brand" value="{{ brands.1.id }}"> {{ brands.1 }}</label>
+                                <label class="label--checkbox"><input type="checkbox" class="checkbox" name="brand" value="{{ brands.2.id }}"> {{ brands.2 }}</label>
+                            </div>
+                            <div class="contact_us__siteDev_wrap">
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="brand" value="{{ brands.3.id }}"> {{ brands.3 }}</label>
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="brand" value="{{ brands.4.id }}"> {{ brands.4 }}</label>
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="brand" value="{{ brands.5.id }}"> {{ brands.5 }}</label>
+                            </div>
+                       </fieldset>
+                       <fieldset class="contact_us__siteDev">
+                               <h6>Интернет Маркетинг</h6>
+                           <div class="contact_us__siteDev_wrap">
+                                <label class="label--checkbox"><input type="checkbox" class="checkbox" name="marketing" value="{{ marketings.0.id }}"> {{ marketings.0 }}</label>
+                                <label class="label--checkbox"><input type="checkbox" class="checkbox" name="marketing" value="{{ marketings.1.id }}"> {{ marketings.1 }}</label>
+                                <!--<label class="label--checkbox"><input type="checkbox" class="checkbox" name="checkbox[]" value="SMM"> SMM</label>-->
+                            </div>
+                            <div class="contact_us__siteDev_wrap">
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="marketing" value="{{ marketings.2.id }}">{{ marketings.2 }}</label>
+                                    <label class="label--checkbox"><input type="checkbox" class="checkbox" name="marketing" value="{{ marketings.3.id }}">{{ marketings.3 }}</label>
+                                   <!-- <label class="label--checkbox"><input type="checkbox" class="checkbox" name="checkbox[]" value="E-mail"> E-mail</label>-->
+                            </div>
+                        </fieldset>
+            </div>
+
+            <div class="form_rightSection">
+                    <div class="form-group">
+                            <label class="form-label" for="modal_name">Ваше Имя</label>
+                            <input type="text" class="form-control" id="modal_name" name="name" placeholder="Ваше Имя (Обязательно)" tabindex="1" maxlength="18" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="modal_phone">Ваш Телефон</label>
+                            <input type="tel" class="form-control" id="modal_phone" name="phone" placeholder="Ваш Телефон" tabindex="2" maxlength="18">
+                        </div>
+                        <div class="form-group">
+                                <label class="form-label" for="modal_email">Ваш Email</label>
+                                <input type="email" class="form-control" id="modal_email" name="email" placeholder="Ваш Email (Обязательно)" tabindex="2" pattern="^\S+@\S+\.\S+$" required>
+                            </div>
+                        <div class="form-group">
+                                <label class="form-label" for="modal_message">Сообщение</label>
+                                <textarea name="message" class="form-control" id="modal_message" placeholder="Сообщение..." tabindex="4"></textarea>
+                            </div>
+                    <div class="text-center">
+                            <input type="submit" class="services_btn"  value="Отправить">
+                    </div>
+            </div>
+     </form>
+   </div>
+</div>
+
+  <div id="overlay"></div><!-- Пoдлoжкa -->
+    <div class="message_wrap">
+        <div class="message_body">
+            <ul>
+                <li>Ваше сообщение было <span>успешно отправлено</span>.</li>
+                <li>Мы скоро свяжемся с вами. с уважением <span>Evoxlab Studio</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
+    <script src="{% static 'js/scripts.min.js' %}"></script>
+
+
+</body>
+</html>

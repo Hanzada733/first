@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="description" content="Создание, разработка сайта. Изготовление сайтов по всему Казахстану. Заказать создать сайт с нуля под ключ  в студии разработки веб сайтов EX. Качественное профессиональное создание продающего сайта. Вы останетесь довольны нашей работой.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="создание сайтов, разработка сайта, стоимость сайта, сайт под ключ, сайт с нуля, заказать сайт, студия разработки веб сайтов, быстро, Украина, Киев, Днепр, EX, EX Development">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Веб студия по созданию, продвижению, разработки сайтов по Казахстану.">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Создание, разработка сайта. Изготовление сайтов по Казахстану. Заказать создать сайт в студии разработки веб сайтов EX Development.">
+    <meta property="og:title" content="Создание, разработка, изготовление сайтов по Казахстану. Заказать сайт с нуля под ключ - Веб студия EX">
+    <title>Веб студия EX Group</title>
+    <link rel="shortcut icon" href="{% static '/img/favicon.png' %}" type="image/png">
+    <noscript id="deferred-styles">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </noscript>
+    <script>
+    var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <style>
+    body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+
+    .preloader-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: RGB(30, 30, 30);
+        z-index: 1300;
+        animation: preloader 0.7s linear;
+        animation-fill-mode: forwards;
+    }
+
+    .preloader-circle {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1), RGB(30, 30, 30), RGB(30, 30, 30));
+    }
+
+    .preloader-wrap svg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .preloader-wrap .fil09 {
+        animation: preloader-circle 0.8s linear;
+    }
+
+    @keyframes preloader {
+        0% {
+            opacity: 1;
+        }
+        60% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    @keyframes preloader-circle {
+        0% {
+            fill: RGB(30, 30, 30);
+        }
+        100% {
+            fill: RGB(235, 211, 0);
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .brief__formWrap {
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .form-label {
+        font-size: 1.3rem;
+        color: dodgerblue;
+        margin: 0;
+        display: block;
+        opacity: 1;
+        /* text-transform: uppercase; */
+        padding-bottom: 10px;
+        -webkit-transition: 0.333s ease top, 0.333s ease opacity;
+        -o-transition: 0.333s ease top, 0.333s ease opacity;
+        -moz-transition: 0.333s ease top, 0.333s ease opacity;
+        transition: 0.333s ease top, 0.333s ease opacity;
+    }
+
+    .form-control {
+        border-radius: 0;
+        border-color: #ccc;
+        border-width: 0 0 2px 0;
+        border-style: none none solid none;
+        box-shadow: none;
+        width: 90%;
+    }
+
+    .form-group {
+        margin: 50px 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0 10px;
+        background: transparent;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: dodgerblue;
+    }
+
+    .form-control:focus .form-label {
+        color: dodgerblue;
+    }
+
+    .js-hide-label {
+        opacity: 1;
+    }
+
+    .js-unhighlight-label {
+        color: dodgerblue;
+    }
+
+    .services_btn {
+        position: relative;
+        left: auto;
+        background: transparent;
+        margin: 15px 15px 0 0;
+    }
+
+    .text-center {
+        text-align: right;
+    }
+    input,
+    textarea,
+    select {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        font-size: 100%;
+        border: none;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+        border: 0px solid transparent;
+        border-bottom: 2px solid dodgerblue;
+        outline: none;
+    }
+    .btn-start-order:focus {
+        border-color: dodgerblue;
+        color: dodgerblue;
+    }
+    .label--checkbox,
+    .label--radio {
+        position: relative;
+        display: block;
+        min-width: 220px;
+        padding: .5rem;
+        line-height: 135%;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .label--checkbox:hover .checkbox,
+    .label--radio:hover .radio {
+        margin: 0 1.3rem 0 0;
+    }
+    .radio {
+  position: relative;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+  transition: margin 0.35s cubic-bezier(1, .5, .38, 1.2);
+}
+.radio:before {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+  -moz-transition: -moz-transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+  transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+  content: "";
+  position: absolute;
+  top: 0.225rem;
+  left: 0.125rem;
+  z-index: 1;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: dodgerblue;
+  border-radius: 50%;
+}
+.radio:checked:before {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.radio:after {
+    content: "";
+    position: absolute;
+    top: 0rem;
+    left: -0.125rem;
+    width: 1rem;
+    height: 1rem;
+    background: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+}
+    .checkbox {
+        position: relative;
+        top: -0.2rem;
+        margin: 0 1rem 0 0;
+        cursor: pointer;
+        transition: margin 0.35s cubic-bezier(1, .5, .38, 1.2);
+    }
+    .checkbox:before {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        content: "";
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        width: 1rem;
+        height: 1rem;
+        border: 2px solid #f2f2f2;
+    }
+    .checkbox:checked:before {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        height: .5rem;
+        border-color: dodgerblue;
+        border-top-style: none;
+        border-right-style: none;
+    }
+   .checkbox:after {
+    content: "";
+    position: absolute;
+    top: -0.125rem;
+    left: 0;
+    width: 1.2rem;
+    height: 1.3rem;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+    .form__title {
+        color: dodgerblue;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 34px;
+        margin-top: 100px;
+        padding: 0 10px;
+    }
+    .brief__formWrap {
+        color: dodgerblue;
+    }
+    .breaf-title__text {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+    .breaf-title__text p {
+        margin: 30px 0;
+        font-size: 14px;
+    }
+    .brief-title__important {
+        color: red;
+    }
+    input,
+    textarea {
+        color: black;
+        margin: 20px 0;
+    }
+    textarea {
+    	display: block;
+    	padding: 0 10px;
+    }
+    .logo {
+        position: fixed;
+        top: 10%;
+        left: 0%;
+        transform: rotate(-90deg);
+        width: 120px;
+        display: none;
+    }
+    .services_btn {
+        font-size: 1rem;
+        padding: 25px 90px!important;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+        outline: 2px solid;
+        outline-color: RGBA(235, 211, 0, 1);
+        outline-offset: 0px;
+        -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1), bottom 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1), bottom 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        -moz-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1), bottom 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1), bottom 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        cursor: pointer;
+        font-weight: 800;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        -o-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+        background: dodgerblue;
+        box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.5);
+    }
+
+    .services_btn:hover {
+        box-shadow: 0 0px 0px 0px transparent;
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 25px;
+        bottom: 14%;
+    }
+
+    .text-center {
+        padding-bottom: 150px;
+        text-align: center;
+    }
+
+    .text-footer {
+        text-align: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .text-footer a {
+        color: dodgerblue;
+        text-decoration: none;
+    }
+
+    .footer-line {
+        width: 80%;
+        height: 1px;
+        margin: 0 auto;
+        background-color: gray;
+        border-radius: 50%;
+    }
+
+    .scroll-bar-wrap {
+        /*width: 300px;*/
+        position: relative;
+        /*margin: 2em auto;*/
+    }
+    .scroll-box {
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .scroll-box::-webkit-scrollbar {
+        width: .4em;
+    }
+    .scroll-box::-webkit-scrollbar-thumb {
+        background: dodgerblue;
+    }
+    .cover-bar {
+        position: absolute;
+        background: #fff;
+        ;
+        height: 100%;
+        top: 0;
+        right: 0;
+        width: .4em;
+        -webkit-transition: all .5s;
+        opacity: 1;
+    }
+    .form-date {
+    	width: 170px;
+    }
+    input[type="radio"] {
+		background: transparent;
+		border: 0px solid transparent;
+    }
+         .pre-png{
+            position: absolute;
+            top: 22%;
+            left: 35%;
+            display: block;
+            width: 30%;
+            
+        }
+    .success {
+        max-width: 700px;
+color: white;
+margin: 30vh auto 0 auto;
+text-align: center;
+font-size: 1.5rem;
+    }
+    .success span {
+        color: dodgerblue;
+    }
+    @media screen and (min-width: 840px) {
+        .logo {
+            display: block;
+            font-size: 16px;
+        }
+    }
+
+     @media screen and (max-width: 840px) {
+        .services_btn {
+            font-size: 0.8rem;
+            padding: 25px 40px!important;
+        }
+    }
+    </style>
+</head>
+
+<body class="scroll-bar-wrap">
+   <div class="preloader-wrap">
+        <div class="preloader-circle"></div>
+        <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30%" height="30%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 36 54"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+    .fil09 {fill:#2B2A29;fill-rule:nonzero}
+  </style>
+ </defs>
+<img src="{% static 'img/preloader.png' %}" class="pre-png">
+</svg>
+    </div>
+   <form action="{% url 'brief_form' %}" method="post">
+    {% csrf_token %}
+
+    <div class="wrapper scroll-box">
+        <h3 class="form__title">Бриф на разработку сайта</h3>
+        <div class="brief__formWrap">
+            <div class="breaf-title__text">
+                <p>Для более четкого определения целей, стоящих перед будущим сайтом, необходимо заполнить анкету максимально подробно. Это поможет нам увидеть максимально точную картину проекта, оперативно определить цены и сроки реализации.</p>
+                <p>Если какие-либо из вопросов анкеты покажутся сложными, пожалуйста, обратитесь к нам за разъяснениями. Мы гарантируем полную конфиденциальность представленной информации о вас и о вашей деятельности.</p>
+                <p class="brief-title__important">* Обязательно</p>
+            </div>
+            <form id="brief-form">
+                <div class="form-group">
+                    <label class="form-label" for="contact_name_company">Полное название компании (рус./англ.) и доменное имя сайта: <span class="brief-title__important">*</span></label>
+                    <textarea class="form-control" id="contact_name_company" name="contact_name_company" placeholder="Ваш ответ" autocomplete="off" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_info_name">Контактная информация (ФИО, должность контактного лица, электронная почта, рабочий и мобильный телефон): </label>
+                    <textarea class="form-control" id="contact_info_name" name="contact_info_name" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_adress">Адрес офиса компании, в котором могут проходить рабочие встречи по проекту. </label>
+                    <textarea class="form-control" id="contact_adress" name="contact_adress" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_data_project">Планируемый срок запуска проекта (день, когда Ваш сайт будет готов): </label>
+                    <input type="date" class="form-control form-date" id="contact_data_project" autocomplete="off" tabindex="0" name="contact_data_project" placeholder="Ваш ответ">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_were_see_us">Откуда узнали о EX Development Group: </label>
+                    <textarea class="form-control" id="contact_were_see_us" name="contact_were_see_us" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_bissnes">Какова область деятельности и специфика бизнеса вашей компании: </label>
+                    <textarea class="form-control" id="contact_bissnes" name="contact_bissnes" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_brend">Опишите бренд / продукт / услугу, для которой создается сайт:</label>
+                    <textarea class="form-control" id="contact_brend" name="contact_brend" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_us_name">География бренда / продукта / услуги, для которой создается сайт:</label>
+                    <div class="contact_us__siteDev_wrap">
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="geografy_brand" value="Город"> Город</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="geografy_brand" value="Страна"> Страна</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="geografy_brand" value="Несколько стран"> Несколько стран</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="geografy_brand" value="Весь мир"> Весь мир</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_brend_perfect">Уникальные преимущества бренда / продукта / услуги, для которой создается сайт:</label>
+                    <textarea class="form-control" id="contact_brend_perfect" name="contact_brend_perfect" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_what_do">Что нужно сделать? Какую задачу вы ставите перед нами?</label>
+                    <textarea class="form-control" id="contact_what_do" name="contact_what_do" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_marketing">Какие маркетинговые и имиджевые цели стоят перед проектом?</label>
+                    <textarea class="form-control" id="contact_marketing" name="contact_marketing" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_us_name">Каковы качественные и количественные критерии успешности реализации проекта?</label>
+                    <div class="contact_us__siteDev_wrap">
+                        <label class="label--checkbox">
+                            <input type="checkbox" class="checkbox" name="success_project[]" value="Прибыль"> Прибыль</label>
+                        <label class="label--checkbox">
+                            <input type="checkbox" class="checkbox" name="success_project[]" value="Конверсия"> Конверсия</label>
+                        <label class="label--checkbox">
+                            <input type="checkbox" class="checkbox" name="success_project[]" value="Секретная миссия?"> Секретная миссия?</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_problem">Опишите проблемы существующего сайта, требующие решения:</label>
+                    <textarea class="form-control" id="contact_problem" name="contact_problem" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_people">Целевая аудитория сайта по группам (есть ли необходимость адаптировать различные части сайта для каждой группы?) Опишите характерные черты посетителей сайта:</label>
+                    <textarea class="form-control" id="contact_people" name="contact_people" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_concurents">Перечислите ваших прямых и косвенных конкурентов (желательно с адресом сайта). Дайте вашу оценку их сайтам (работе в интернете в целом), отметьте их положительные и отрицательные стороны. Назовите наиболее удачный пример позиционирования в интернете среди ваших конкурентов:</label>
+                    <textarea class="form-control" id="contact_concurents" name="contact_concurents" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_money">Каков планируемый бюджет проекта? Существует ли возможность внесения предоплаты в размере более 50%? <span class="brief-title__important">*</span></label>
+                    <textarea class="form-control" id="contact_money" name="contact_money" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_menu_site">Перечислите основные пункты навигационного меню сайта (предварительная структура):</label>
+                    <textarea class="form-control" id="contact_menu_site" name="contact_menu_site" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_servisess_site">Опишите ключевые сервисы сайта (каталоги, новостные ленты, формы заявок и прочее):</label>
+                    <textarea class="form-control" id="contact_servisess_site" name="contact_servisess_site" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_update_site">По возможности оцените периодичность обновления информации на сайте (в каждом разделе отдельно):</label>
+                    <textarea class="form-control" id="contact_update_site" name="contact_update_site" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_us_name">Предполагается ли публикация иностранных версий сайта?</label>
+                    <div class="contact_us__siteDev_wrap">
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="multi_site" value="Да"> Да</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="multi_site" value="Нет"> Нет</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="multi_site" value="Другое"> Другое</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_us_name">Кто готовит информационные материалы для сайта? Оцените текущую степень готовности информации. Нужна ли фотосъемка? Есть ли необходимость в редактуре текстов и написании текстов с нуля?</label>
+                    <div class="contact_us__siteDev_wrap">
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="info_for_site" value="У меня полностью готов весь контент на сайт"> У меня полностью готов весь контент на сайт</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="info_for_site" value="У меня есть только тексты, надо сделать фотосъемку"> У меня есть только тексты, надо сделать фотосъемку</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="info_for_site" value="У меня есть только фотографии"> У меня есть только фотографии</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="info_for_site" value="У меня есть каркасы текстов и некоторые фотографии"> У меня есть каркасы текстов и некоторые фотографии</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="info_for_site" value="Другое"> Другое</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_risk_site">Каковы существующие ограничения для разработки сайта (нагрузка по посещаемости, платформа разработки, система администрирования)?</label>
+                    <textarea class="form-control" id="contact_risk_site" name="contact_risk_site" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <label class="form-label" for="contact_us_name">Необходима ли мобильная версия сайта или адаптация под мобильные устройства (адаптивный дизайн и верстка)?</label>
+                    <div class="contact_us__siteDev_wrap">
+                        <label class="label--checkbox">
+                            <input type="checkbox" class="checkbox" name="mobile_version[]" value="Только стандартная версия сайта" > Только стандартная версия сайта</label>
+                        <label class="label--checkbox">
+                            <input type="checkbox" class="checkbox" name="mobile_version[]" value="Нужна мобильная версия"> Нужна мобильная версия</label>
+                        <label class="label--checkbox">
+                            <input type="checkbox" class="checkbox" name="mobile_version[]" value="Нужна адаптивная версия сайта"> Нужна адаптивная версия сайта</label>
+                        <label class="label--checkbox">
+                            <input type="checkbox" class="checkbox" name="mobile_version[]" value="Другое"> Другое</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_us_name">Какими способами осуществляется техническая и дизайнерская поддержка существующего сайта (самостоятельно /с помощью подрядчика)?</label>
+                    <div class="contact_us__siteDev_wrap">
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="technical_support" value="Самостоятельно"> Самостоятельно</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="technical_support" value="Заказываем техническое обсулуживание"> <span>Заказываем техническое обсулуживание</span></label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="technical_support" value="Другое"> Другое</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_mean_update">Кто в компании будет заниматься поддержкой сайта?</label>
+                    <textarea class="form-control" id="contact_mean_update" name="contact_mean_update" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_us_name">Требуется ли дальнейшая поддержка со стороны разработчика (техническая, дизайнерская, иная)?</label>
+                    <div class="contact_us__siteDev_wrap">
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="our_technical_support" value="Да"> Да</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="our_technical_support" value="Нет"> Нет</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="our_technical_support" value="Да, если бесплатно"> Да, если бесплатно</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="our_technical_support" value="Другое"> Другое</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_us_name">Есть ли у вашей компании фирменный стиль, логотип, рекламные материалы? Приложите их к брифу. Если нет, требуется ли разработка?</label>
+                    <div class="contact_us__siteDev_wrap">
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="logo_style" value="Есть логотип"> Есть логотип</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="logo_style" value="Нет логотипа"> Нет логотипа</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="logo_style" value="Нет логотипа, хотим заказать у вас"> Нет логотипа, хотим заказать у вас</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="logo_style" value="Нет логотипа и не нужен"> Нет логотипа и не нужен</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="logo_style" value="Есть брэндбук"> Есть брэндбук</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="logo_style" value="Другое"> Другое</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_site_list">Перечислите несколько сайтов, которые вам нравятся (независимо от их направленности и тематики). Чем они вас привлекают?</label>
+                    <textarea class="form-control" id="contact_site_list" name="contact_site_list" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_not_site_list">Перечислите несколько сайтов, которые вам не нравятся (независимо от их направленности и тематики). Чем они вас отталкивают?</label>
+                    <textarea class="form-control" id="contact_not_site_list" name="contact_not_site_list" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_new_site">Опишите будущий сайт нескольким прилагательными (например, современный, удобный). Также укажите, каким он не должен быть (например, ярким, пафосным). Укажите хотя бы по 5 определений:</label>
+                    <textarea class="form-control" id="contact_new_site" name="contact_new_site" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_strategy">Существует ли стратегия продвижения бренда / товара / услуги? Кто реализует стратегию?</label>
+                    <textarea class="form-control" id="contact_strategy" name="contact_strategy" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_site_strategy">Каким образом сайт встроен в эту стратегию?</label>
+                    <textarea class="form-control" id="contact_site_strategy" name="contact_site_strategy" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_site_reclam">Предполается ли взаимодействие сайта и других рекламных носителей (наружная реклама, промо-акции, печатные СМИ, иное)?</label>
+                    <textarea class="form-control" id="contact_site_reclam" name="contact_site_reclam" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_us_name">Планируется ли дальнейшее продвижение сайта? Какими способами и чьими силами?</label>
+                    <div class="contact_us__siteDev_wrap">
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="seo_advancement" value="Нет"> Нет</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="seo_advancement" value="Да, своими силами"> Да, своими силами</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="seo_advancement" value="Да, у нас есть подрядчик"> Да, у нас есть подрядчик</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="seo_advancement" value="Да, хотим работать с вами"> Да, хотим работать с вами</label>
+                        <label class="label--radio">
+                            <input type="radio" class="radio" name="seo_advancement" value="Другое"> Другое</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_site_seo">Требуется ли рассчет стоимости продвижения сайта в поисковых системах (SEO, контекстные)? Укажите ключевые слова, по которым планируется продвижение:</label>
+                    <textarea class="form-control" id="contact_site_seo" name="contact_site_seo" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_site_social">Рассматриваете ли вы возможность продвижения сайта в социальных сетях? Есть ли текущие проекты? Кто занимается их ведением?</label>
+                    <textarea class="form-control" id="contact_site_social" name="contact_site_social" placeholder="Ваш ответ" autocomplete="off"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact_more_info">Укажите все то, что, с вашей точки зрения, может дополнительно уточнить задачу по разработке сайта. При необходимости приложите дополнительные материалы к брифу.</label>
+                    <textarea class="form-control textarea" id="contact_more_info" name="contact_more_info" placeholder="Ваш ответ" tabindex="0" dir="auto" badinput="false" autocomplete="off"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="services_btn" id="stat_modal_btn">Отправить письмо</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer-line"></div>
+        <div class="text-footer" style="color: dodgerblue;">
+            <p>© 2019 <a href="https://exgroup.kz/">EX Development.</a> Все права защищены.</p>
+        </div>
+    </div>
+    <!-- Пoдлoжкa -->
+    <script src="{% static 'js/brief.min.js' %}" crossorigin="anonymous" async></script>
+       </form>
+</body>
+
+</html>
